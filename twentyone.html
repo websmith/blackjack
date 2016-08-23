@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>21 Game | Final Assignment</title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1 align="center">The 21 Game</h1>
+
+		<div class="flex-container">
+			<section class="player">
+				<h2 class="title">Player</h2>
+				<div class="playerWrapper">
+					<p>Player card: <span id="playerCard"></span></p>
+					<p>Player points: <span id="playerPts">0</span></p>
+					<hr>
+					<p>Total Wins: <span id="playerWins">0</span></p>
+				</div>
+			</section>
+			<section class="dealer">
+				<h2 class="title">Dealer</h2>
+				<div class="playerWrapper">
+					<p>Dealer card: <span id="dealerCard"></span></p>
+					<p>Dealer points: <span id="dealerPts">0</span></p>
+					<hr>
+					<p>Total Wins: <span id="dealerWins">0</span></p>
+				</div>
+			</section>
+		</div>
+		<div class="flex-container">
+			<h3 class="winner disabled">The winner is: <span id="winner"></span></h3>
+			<div id="controls" class="disabled">
+				<p>Select an option:</p>
+				<a class="button" id="hit" href="#" onclick="hit()">Hit</a>
+				<a class="button stay" id="stay" href="#" onclick="stay()">Stay</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="log">
+		<h3>Play Log</h3>
+		<div id="log">
+			<p>Waiting for input...</p>
+		</div>
+		<a class="button" href="#" onclick="play()">Play!</a>
+	</div>
+
+	<script src="js/game.js"></script>
+</body>
+
+</html>
